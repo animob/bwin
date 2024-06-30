@@ -1,0 +1,12 @@
+{
+  "name": "bwin",
+  "version": "1.0.0",
+  "description": "Test project BWIN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anna Dubik",
+  "license": "ISC"
+}
