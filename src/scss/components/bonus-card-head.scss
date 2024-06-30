@@ -1,0 +1,56 @@
+.bonus-card {
+  &__head {
+    border-bottom: 2px solid rgba(235, 236, 245, 0.6);
+    display: flex;
+    align-items: center;
+    min-height: 71px;
+    color: #313446;
+
+    @media only screen and (max-width: 600px) {
+      min-height: 47px;
+    }
+  }
+
+  &__company {
+    margin: 0 16px;
+    font-size: 18px;
+
+    @media only screen and (max-width: 600px) {
+      margin: 0 12px;
+      font-size: 15px;
+    }
+  }
+
+  &__number {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 16px;
+    width: 12px;
+    display: block;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 14px;
+      margin: 0 8px 0 11px;
+    }
+  }
+
+  &__rate {
+    margin: 0 -4px 0 auto;
+    font-size: 17px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 14px;
+      margin: 0 -5px 0 auto;
+    }
+  }
+
+  &__stars {
+    margin: 2px 15px 0 15px;
+    display: flex;
+
+    @media only screen and (max-width: 600px) {
+      margin: 2px 10px 0 15px;
+    }
+  }
+}

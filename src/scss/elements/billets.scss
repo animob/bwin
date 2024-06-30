@@ -1,0 +1,39 @@
+.bonus-card--billet-purple,
+.bonus-card--billet-orange {
+  position: relative;
+
+  &::before {
+    width: 221px;
+    height: 42px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "BEST BONUS";
+    position: absolute;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 50%;
+    margin-right: -110px;
+    top: -6px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 12px;
+      width: 180px;
+      height: 35px;
+      right: 170px;
+    }
+  }
+}
+
+.bonus-card--billet-purple {
+  &::before {
+    background-image: url(../img/bg-billet-purple.svg);
+  }
+}
+
+.bonus-card--billet-orange {
+  &::before {
+    background-image: url(../img/bg-billet-orange.svg);
+  }
+}

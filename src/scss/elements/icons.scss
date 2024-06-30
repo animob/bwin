@@ -1,0 +1,41 @@
+.bonus-card__number--bg-gradient {
+  display: table;
+  background: linear-gradient(180deg, #FFC736 0%, #FF630C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bonus-card__fire-icon {
+  width: 14px;
+  height: 19px;
+  background-image: url(../img/icon-fire.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media only screen and (max-width: 600px) {
+    width: 10px;
+    height: 13px;
+  }
+}
+
+.bonus-card__star-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon-star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 2px 0 2px;
+
+  &.bonus-card__star-icon--hide-mobile {
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 14px;
+    height: 14px;
+  }
+}

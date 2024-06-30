@@ -1,0 +1,1 @@
+function populateCardNumbers(){var r=document.querySelectorAll(".bonus-card__number");Array.from(r).forEach((r,e)=>{r.textContent=e+1})}populateCardNumbers();

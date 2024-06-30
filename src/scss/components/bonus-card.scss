@@ -1,0 +1,19 @@
+.bonus-card {
+  &-list {
+    margin: 0;
+    padding: 0 10px;
+    display: grid;
+    gap: 15px 0;
+    place-items: center;
+    list-style-type: none;
+  }
+
+  & {
+    background-color: #F7F8FD;
+    border-radius: 15px;
+    max-width: 1320px;
+    min-height: 228px;
+    width: 100%;
+  }
+
+}
