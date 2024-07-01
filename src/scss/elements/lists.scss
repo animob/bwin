@@ -13,7 +13,7 @@
   }
 
   &__icon-list-item {
-    padding: 7px 0 7px 42px;
+    padding: 7px 0 8px 40px;
     line-height: 17px;
     position: relative;
 
@@ -24,17 +24,21 @@
       font-weight: 900;
       color: #0079F0;
       position: absolute;
-      left: 16px;
+      left: 14px;
     }
 
     @media only screen and (max-width: 600px) {
-      padding: 7px 5px 7px 26px;
+      padding: 10px 2px 6px 37px;
       width: 40%;
       flex: 1 0 auto;
 
       &::before {
-        left: 0;
+        left: 11px;
       }
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: auto;
     }
   }
 
@@ -42,13 +46,103 @@
     padding: 0;
     list-style-type: none;
     margin: -7px -10px 16px;
-    display: flex;
     flex-wrap: wrap;
+
+    &.bonus-card__payment-list--hide-mobile {
+      display: flex;
+    }
+
+    &.bonus-card__payment-list--show-mobile {
+      display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin: 5px 0 0 0;
+      flex-wrap: nowrap;
+
+      &.bonus-card__payment-list--hide-mobile {
+        display: none;
+      }
+
+      &.bonus-card__payment-list--show-mobile {
+        display: flex;
+      }
+    }
   }
 
   &__payment-list-item {
+    list-style-type: none;
+    background: rgba(235, 236, 245, 0.65);
+    width: 53px;
+    height: 34px;
+    margin: 7px 10px 7px 9px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      margin: 7px 7px 7px 8px;
+
+      &:nth-child(n+7) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      margin: 7px 6px 7px 6px;
+      width: 38px;
+      height: 24px;
+    }
+  }
+  
+  &__info-pros-item {
+    position: relative;
+    padding: 8px 0 8px 44px;
+
+    &::before {
+      content: "\f164";
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      font-weight: 900;
+      color: #53AF1B;
+      position: absolute;
+      left: 16px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 0px 5px 4px 16px;
+      flex: 1 0 auto;
+
+      &::before {
+        left: 0;
+        font-size: 9px;
+      }
+    }
+  }
+
+  &__info-cons-item {
+    position: relative;
+    padding: 8px 0 8px 44px;
+
+    &::before {
+      content: "\f165";
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      font-weight: 900;
+      color: #FF4C34;
+      position: absolute;
+      left: 16px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 0px 5px 4px 16px;
+      flex: 1 0 auto;
+
+      &::before {
+        left: 0;
+        font-size: 9px;
+      }
+    }
   }
 }
