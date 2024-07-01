@@ -1,0 +1,115 @@
+.bonus-card {
+  &__content {
+    padding: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    @media only screen and (max-width: 600px) {
+      padding: 14px 11px;
+      gap: 14px;
+    }
+  }
+
+  &__logo {
+    line-height: 1;
+    width: 148px;
+    height: 125px;
+    flex: 0 0 auto;
+
+    @media only screen and (max-width: 600px) {
+      border-radius: 15px;
+      width: 72px;
+      height: 60px;
+    }
+  }
+
+  &__above-title {
+    padding-left: 22px;
+    font-weight: 500;
+    display: block;
+    margin-top: -3px;
+    position: relative;
+
+    &::before {
+      display: block;
+      width: 13px;
+      height: 14px;
+      background-image: url(../img/icon-gift.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      content: '';
+      left: 2px;
+      top: 5px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__heading {
+    color: #313446;
+    margin: 4px 0 10px;
+    font-size: 24px;
+    line-height: 29px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 10px;
+      line-height: 15px;
+    }
+  }
+
+  &__description {
+    max-width: 285px;
+    line-height: 20px;
+
+    @media only screen and (max-width: 600px) {
+      line-height: 15px;
+    }
+  }
+
+  &__payment {
+    max-width: 272px;
+    width: 100%;
+    margin: 0 4% 0 6%;
+  }
+
+  &__payment-list-item {
+    list-style-type: none;
+    background: rgba(235, 236, 245, 0.65);
+    width: 53px;
+    height: 34px;
+    margin: 7px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    background-color: #f1f3fd;
+
+    &.hidden {
+      display: none;
+    }
+
+    &-text {
+      flex: 1 0 auto;
+      max-width: 445px;
+    }
+
+    &-pros,
+    &-cons {
+      border: 2px solid rgba(235, 236, 245, 1);
+      border-radius: 15px;
+      padding: 15px 29px 15px 15px;
+      flex: 1 0 auto;
+    }
+  }
+}
